@@ -1,0 +1,14 @@
+name: My First Workflow          # Workflow name (shows in GitHub Actions tab)
+
+on:                              # Defines event triggers
+  push:                          # Run when code is pushed
+    branches: [ main ]           # But only if push is to 'main' branch
+
+jobs:                            # Workflows are made up of jobs
+  demo:                          # Job name (you can call it anything)
+    runs-on: ubuntu-latest       # Runner machine (here: Ubuntu Linux latest version)
+    steps:                       # Steps inside the job
+      - name: Greetings          # Step name (for readability in logs)
+        run: echo "Hello From First Workflow"   # Command to execute (prints message)
+
+
