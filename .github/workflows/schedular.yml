@@ -1,0 +1,13 @@
+name: Daily 4PM Workflow
+
+on:
+  schedule:
+    - cron: "0 16 * * *"     # Runs every day at 16:00 (4:00 PM UTC)
+  workflow_dispatch:          # Optional: allow manual trigger too
+
+jobs:
+  cron-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show current time
+        run: echo "Workflow ran at $(date)"
