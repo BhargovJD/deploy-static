@@ -2,7 +2,7 @@ name: Daily 4PM Workflow
 
 on:
   schedule:
-    - cron: " 16 * * *"     # Runs every day at 16:00 (4:00 PM UTC)
+    - cron: "10 16 * * *"     # Runs every day at 16:00 (4:00 PM UTC)
 
 jobs:
   cron-demo:
