@@ -2,7 +2,7 @@ name: Daily 4PM Workflow
 
 on:
   schedule:
-    - cron: "05 16 * * *"     # Runs every day at 16:00 (4:00 PM UTC)
+    - cron: "08 16 * * *"     # Runs every day at 16:00 (4:00 PM UTC)
   workflow_dispatch:          # Optional: allow manual trigger too
 
 jobs:
